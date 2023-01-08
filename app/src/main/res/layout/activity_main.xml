@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="50dp"/>
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/username"
+        android:hint="Username"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/password"
+        android:hint="Password"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/confpassword"
+        android:hint="Confirm Password"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="20dp"/>
+
+    <Button
+        android:height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup"
+        android:text="register"
+        android:textSize="20dp"
+        android:shadowColor="@color/white"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:height="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signin"
+        android:text="Already have an account"
+        android:textSize="15dp"
+        android:layout_marginBottom="30dp"/>
+</LinearLayout>
