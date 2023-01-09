@@ -32,24 +32,30 @@
         android:background="@drawable/edittextbackground"
         android:layout_marginBottom="30dp"
         android:paddingLeft="20dp"/>
+
+    <Button
+        android:id="@+id/movieSearchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:text="Search!"
+        android:textSize="20dp" />
+
     <TextView
         android:id="@+id/movieTextDisplay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center_horizontal"
         android:text=""
         android:textColor="@color/white"
         android:textSize="30dp"
-        android:textStyle="bold" />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/movieSearchButton"
-        android:text="Search!"
-        android:textSize="20dp"
-        android:backgroundTint="@color/cardview_dark_background"
-        android:layout_marginBottom="30dp"/>
+        android:textStyle="bold"
+        android:scrollbars = "vertical"
+        />
+
+
 
 </LinearLayout>
