@@ -18,7 +18,7 @@ Przydatne strony:
   
   > https://www.exploit-db.com/docs/english/41397-injecting-sqlite-database-based-applications.pdf
   
-  > https://www.invicti.com/blog/web-security/sql-injection-cheat-sheet/
+  > https://book.hacktricks.xyz/pentesting-web/sql-injection
   
 ### Zad 1. Proste SQL Injection
   Spróbuj uzyskać dostęp do wyszukiwarki filmów (która normalnie dostępna jest po zalogowaniu/zarejestrowaniu) przy pomocy SQL Injection
@@ -26,18 +26,27 @@ Przydatne strony:
   Przesłanie rozwiązania: prześlij użyte polecenie i napisz, gdzie zostało umieszczone || screenshot z aplikacji
   
  
-### Zad 2. Union Attack
-  Celem zadania jest pozyskanie hasła administratora aplikacji 
+### Zad 2. Union Attack 1
+  Celem zadania jest uzyskanie informacji o bazie danych poprzez SQL Injection- nazwy tabel i kolumn.
+  
+  Przesłanie rozwiązania: prześlij użyte polecenia i opisz, gdzie zostały umieszczone, aby uzyskać informacje o bazie danych || screenshot z aplikacji
+  
+### Zad 3. Union Attack 2
+  Celem zadania jest pozyskanie haseł użytkowników, a w szczególności hasła administratora przy użyciu SQL Injection oraz informacji o bazie danych uzyskanych w zadaniu 2.
   
   *(Dla wygody hasła przechowywane w bazie nie są w żaden sposób hashowane)*
   
-  Posiłkując się przydatnymi stronami pozyskaj nazwy kolumn, następnie tabel, a ostatecznie nazwy i hasła użytkowników
-  
   Przesłanie rozwiązania: prześlij użyte polecenia i hasło administratora
   
-### Zad 3. Input Sanitization
+### Zad 4. Stworzenie użytkownika ze statusem administratora
+  Wykorzystaj SQL Injection przy rejestracji użytkownika.
+  Jeżeli użytkownik ma status administratora, to na ekranie wyszukiwania filmów pojawi się napis [You are an Admin]
+  
+  Przesłanie rozwiązania: prześlij użyte polecenia i opisz, gdzie zostały umieszczone
+  
+### Zad 5. Input Sanitization
   Zmień kod w **DatabaseHelper.java** tak, żeby zapobiec SQL Injection.
   
-  Przesłanie rozwiązania: prześlij poprawiony plik **DatabaseHelper.java** || przekopiuj jego kod w odpowiedzi || wpisz do odpowiedzi przykładowo: 
+  Przesłanie rozwiązania: prześlij poprawiony plik DatabaseHelper.java || przekopiuj kod DatabaseHelper.java do odpowiedzi || wpisz do odpowiedzi przykładowo: 
   ```linia kodu oryginalna``` -> ```linia kodu poprawiona```
   
