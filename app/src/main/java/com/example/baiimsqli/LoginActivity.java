@@ -30,10 +30,8 @@ public class LoginActivity extends AppCompatActivity {
         signin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 String user=username.getText().toString();
                 String pass=password.getText().toString();
-
                 if(TextUtils.isEmpty(user) || TextUtils.isEmpty(pass))
                     Toast.makeText(LoginActivity.this,"All fields required", Toast.LENGTH_SHORT).show();
                 else{
@@ -41,6 +39,7 @@ public class LoginActivity extends AppCompatActivity {
                     if(checkuserpass){
                         Toast.makeText(LoginActivity.this,"Login Succesful", Toast.LENGTH_SHORT).show();
                         Intent intent=new Intent(getApplicationContext(), HomeActivity.class);
+                        intent.putExtra("USERNAME",user);
                         startActivity(intent);
                     } else {Toast.makeText(LoginActivity.this,"Login failed", Toast.LENGTH_SHORT).show();}
                 }

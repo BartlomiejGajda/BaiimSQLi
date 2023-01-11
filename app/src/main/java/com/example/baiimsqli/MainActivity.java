@@ -17,16 +17,17 @@ public class MainActivity extends AppCompatActivity {
     DatabaseHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        //Boolean admin = databaseHelper.insertData("admin", "8937", 1);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //8937
+
         username=findViewById(R.id.username);
         password=findViewById(R.id.password);
         confpassword=findViewById(R.id.confpassword);
         signup=findViewById(R.id.signup);
         signin=findViewById(R.id.signin);
+
         databaseHelper = new DatabaseHelper(this);
+
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
                             if(insert){
                                 Toast.makeText(MainActivity.this, "Registered successfully", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+                                intent.putExtra("USERNAME",user);
                                 startActivity(intent);
                             } else {
                                 Toast.makeText(MainActivity.this, "Registration failed", Toast.LENGTH_SHORT).show();
