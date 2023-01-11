@@ -4,9 +4,9 @@
 3. W programie Android Studio:
   Lewy górny róg: File -> Open...
   Zaznacz wypakowany projekt i kliknij ok
-4. W celu poprawnego działania aplikacji będziesz musiał wykonać kilka kroków - zacznij od pobrania pliku login.db, naastępnie uruchom emulator np. poprzez uruchomienie aplikacji.
+4. W celu poprawnego działania aplikacji będziesz musiał wykonać kilka kroków - uruchom emulator np. poprzez uruchomienie aplikacji.
 5. Na cienkim pasku po prawej stronie znajduje się zakładka Device File Menager - kliknij ją, ukażą Ci się foldery w telefonie.
-6. Przejdź do data -> data -> com.example.baiimsqli -> databases - kliknij prawym przyciskiem, Upload i wybierz pobrany plik login.db
+6. Przejdź do data -> data -> com.example.baiimsqli -> databases - kliknij prawym przyciskiem, Upload i wybierz pobrany plik login.db, który znajduje się w folderze z kodem projektu
 7. Przejdź do zakładki emulator i kliknij x obok nazwy w celu zresetowania urządzenia.
 8. Uruchom aplikację ponownie, życzymy powodzenia w zadaniach!
 
