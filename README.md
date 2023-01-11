@@ -25,6 +25,8 @@ Przydatne strony:
   
   > https://book.hacktricks.xyz/pentesting-web/sql-injection
   
+  > https://portswigger.net/web-security/sql-injection/union-attacks
+  
 ### Zad 1. Proste SQL Injection
   Spróbuj uzyskać dostęp do wyszukiwarki filmów (która normalnie dostępna jest po zalogowaniu/zarejestrowaniu) przy pomocy SQL Injection
   
