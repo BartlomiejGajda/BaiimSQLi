@@ -1,5 +1,5 @@
 ## Przygotowanie środowiska
-1. Pobierz i zainstaluj Android Studio: https://developer.android.com/studio
+1. Pobierz i zainstaluj Android Studio: https://developer.android.com/studio oraz emulator urządzenia android
 2. Pobierz kod projektu klikając na zielony przycisk [<> Code] -> [Download ZIP] i wypakuj w dogodnym miejscu
 3. W programie Android Studio:
   Lewy górny róg: File -> Open...
